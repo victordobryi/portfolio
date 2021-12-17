@@ -1,0 +1,51 @@
+.about {
+  display: flex;
+  justify-content: space-between;
+  &__info {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+  }
+  &__title {
+    font-weight: 900;
+    font-size: 35px;
+  }
+  &__subtitle {
+    font-size: 16px;
+  }
+  &__contacts {
+    width: 300px;
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      & span {
+        font-weight: 600;
+      }
+      & div {
+        width: 100px;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    &-item {
+      text-align: center;
+      padding: 15px;
+      display: inline-block;
+      border: none;
+      border-radius: 2px;
+      transition: all 0.3s ease;
+      font-size: 14px;
+      min-width: 120px;
+      background-color: #fff;
+      &.dark {
+        background-color: rgb(71, 71, 238);
+        color: #fff;
+      }
+    }
+  }
+}

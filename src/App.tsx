@@ -1,10 +1,15 @@
 import React, { Fragment } from 'react';
+import { About } from './components/About/About';
+import { Header } from './components/Header/Header';
 
-import './index.scss';
+import './styles/main.scss';
 
 export const App = () => (
   <Fragment>
-    <h1>React TypeScript Webpack Starter Template</h1>
+    <Header />
+    <main>
+      <About />
+    </main>
   </Fragment>
 );
 

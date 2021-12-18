@@ -5,11 +5,6 @@ export const SidebarData = [
     path: '#',
     cName: 'menu__links-item'
   },
-  {
-    title: 'Certificates',
-    path: '#',
-    cName: 'menu__links-item'
-  },
   { title: 'Skills', path: '#', cName: 'menu__links-item' },
   {
     title: 'Portfolio',

@@ -1,0 +1,31 @@
+.slider {
+  width: 1000px;
+  &__container {
+    overflow: hidden;
+    background-color: pink;
+  }
+  &__track {
+    display: flex;
+    background-color: yellowgreen;
+    transition: 0.2s;
+  }
+  &__item {
+    height: 300px;
+  }
+}
+
+.slider__item:nth-child(3n + 1) {
+  background-color: red;
+}
+
+.slider__item:nth-child(3n + 2) {
+  background-color: green;
+}
+
+.slider__item:nth-child(3n + 3) {
+  background-color: blue;
+}
+
+.slider__buttons {
+  text-align: center;
+}

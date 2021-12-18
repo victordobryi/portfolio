@@ -11,16 +11,6 @@ body {
   background: aquamarine;
 }
 
-._container-wide {
-  // max-width: 1760px;
-  // padding: 0 80px;
-  min-height: 100%;
-  overflow: hidden;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-}
-
 ._container {
   max-width: 1440px;
   margin: 0 auto;
@@ -29,4 +19,10 @@ body {
 
 main {
   flex: 1 1 auto;
+}
+
+.title {
+}
+
+.subtitle {
 }

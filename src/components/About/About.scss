@@ -1,10 +1,14 @@
 .about {
-  display: flex;
-  justify-content: space-between;
+  &-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+  }
   &__info {
     display: flex;
     flex-direction: column;
-    width: 45%;
+    width: 48%;
   }
   &__title {
     font-weight: 900;
@@ -41,11 +45,32 @@
       transition: all 0.3s ease;
       font-size: 14px;
       min-width: 120px;
-      background-color: #fff;
+      background: #efefef;
       &.dark {
         background-color: rgb(71, 71, 238);
         color: #fff;
       }
+    }
+  }
+  &__img {
+    position: relative;
+    width: 48%;
+    &-circle {
+      width: 300px;
+      height: 300px;
+      background-color: #fff;
+      border-radius: 100%;
+      margin: 75px auto 0px auto;
+    }
+    & img {
+      position: absolute;
+      margin: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 300px;
+      height: 300px;
     }
   }
 }

@@ -7,7 +7,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
   entry: path.resolve(__dirname, '..', './src/index.tsx'),
   resolve: {
-    extensions: ['.tsx', '.ts', '.js'],
+    extensions: ['.tsx', '.ts', '.js']
   },
   module: {
     rules: [
@@ -16,9 +16,9 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           {
-            loader: 'babel-loader',
-          },
-        ],
+            loader: 'babel-loader'
+          }
+        ]
       },
       {
         test: /\.(s[ac]|c)ss$/i,
@@ -26,29 +26,29 @@ module.exports = {
           MiniCssExtractPlugin.loader,
           'css-loader',
           'postcss-loader',
-          'sass-loader',
-        ],
+          'sass-loader'
+        ]
       },
       {
-        test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
-        type: 'asset/resource',
+        test: /\.(?:ico|gif|png|jpg|jpeg|webp)$/i,
+        type: 'asset/resource'
       },
       {
-        test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
-        type: 'asset/inline',
-      },
-    ],
+        test: /\.(woff(2)?|eot|ttf|otf|svg)$/,
+        type: 'asset/inline'
+      }
+    ]
   },
   output: {
     path: path.resolve(__dirname, '..', './build'),
-    filename: 'bundle.js',
+    filename: 'bundle.js'
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, '..', './src/index.html'),
+      template: path.resolve(__dirname, '..', './src/index.html')
     }),
     new ESLintPlugin({
-      extensions: ['js', 'jsx', 'ts', 'tsx'],
+      extensions: ['js', 'jsx', 'ts', 'tsx']
     }),
     new MiniCssExtractPlugin(),
     new PrettierPlugin({
@@ -60,7 +60,7 @@ module.exports = {
       trailingComma: 'none',
       encoding: 'utf-8',
       extensions: ['.js', '.ts', 'jsx', 'tsx'],
-      endOfLine: 'auto',
-    }),
-  ],
+      endOfLine: 'auto'
+    })
+  ]
 };

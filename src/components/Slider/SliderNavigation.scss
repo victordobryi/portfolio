@@ -1,0 +1,23 @@
+.slider {
+  &__nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__buttons {
+    text-align: center;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__pagination {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+    &-item {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 1px solid black;
+    }
+  }
+}

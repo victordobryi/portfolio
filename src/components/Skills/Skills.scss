@@ -1,0 +1,32 @@
+.art__gallery {
+  background-color: #030303;
+}
+
+.gallery {
+  overflow: hidden;
+  position: relative;
+  padding-top: 50px;
+  &-inner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    column-gap: 30px;
+    row-gap: 30px;
+    height: 1000px;
+  }
+}
+
+.grid-item {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  opacity: 0;
+  transform: translateY(30%);
+  transition: all 0.5s;
+  border: 1px solid black;
+  border-radius: 5px;
+  &.active {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}

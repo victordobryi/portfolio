@@ -21,8 +21,11 @@ main {
   flex: 1 1 auto;
 }
 
-.title {
+section {
+  padding-top: 100px;
 }
 
-.subtitle {
+.section-container {
+  display: flex;
+  justify-content: space-between;
 }

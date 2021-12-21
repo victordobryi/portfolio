@@ -1,13 +1,12 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import { PortfolioData } from './PortfolioData';
 import { AiOutlineArrowUp, AiOutlineArrowDown } from 'react-icons/ai';
-import './PortfolioSlider.scss';
 
 export const PortfolioSlider = () => {
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
-  const heightRef = useRef<HTMLDivElement>(null);
+  const [isVideoEntered, setIsVideoEntered] = useState(false);
 
-  const height = 600;
+  const height = 500;
 
   const nextSlide = () => {
     setActiveSlideIndex(
@@ -23,11 +22,11 @@ export const PortfolioSlider = () => {
   const reversedData = [...PortfolioData].reverse();
 
   return (
-    <div className="portfolio__slider" ref={heightRef}>
+    <div className="portfolio__slider">
       <div
         className="portfolio__info"
         style={{
-          top: `-${(PortfolioData.length - 1) * 600}px`,
+          top: `-${(PortfolioData.length - 1) * height}px`,
           transform: `translateY(${activeSlideIndex * height}px)`
         }}
       >
@@ -37,8 +36,10 @@ export const PortfolioSlider = () => {
             className="portfolio__item"
             style={{ background: background }}
           >
-            <h2>{title}</h2>
-            <p>{subtitle}</p>
+            <div className="portfolio__item-info">
+              <h2>{title}</h2>
+              <p>{subtitle}</p>
+            </div>
           </div>
         ))}
       </div>
@@ -48,9 +49,32 @@ export const PortfolioSlider = () => {
           transform: `translateY(-${activeSlideIndex * height}px)`
         }}
       >
-        {reversedData.map(({ link, image }, i) => (
+        {reversedData.map(({ link, image, video }, i) => (
           <a key={i} target="_blank" href={link} rel="noreferrer">
-            <div style={{ backgroundImage: `url(${image})` }}></div>
+            <div
+              style={{ backgroundImage: `url(${image})` }}
+              onMouseEnter={() => setIsVideoEntered(true)}
+              onMouseLeave={() => setIsVideoEntered(false)}
+            >
+              <video
+                src={video}
+                loop
+                autoPlay={false}
+                muted
+                style={{
+                  visibility: isVideoEntered ? 'visible' : 'hidden',
+                  opacity: isVideoEntered ? '1' : '0'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.play();
+                }}
+                onMouseLeave={(e) => {
+                  (e.currentTarget.currentTime = 0), e.currentTarget.pause();
+                }}
+              >
+                <track default kind="captions" />
+              </video>
+            </div>
           </a>
         ))}
       </div>

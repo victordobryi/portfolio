@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './SliderNavigation.scss';
+import { AiOutlineArrowRight, AiOutlineArrowLeft } from 'react-icons/ai';
 import { SliderData } from './SliderData';
 
 interface ISliderNavigation {
@@ -49,17 +50,17 @@ export const SliderNavigation = ({
       <div className="slider__buttons">
         <button
           disabled={isPrevDisabled}
-          className="btn-prev"
+          className="btn-prev slider__btn"
           onClick={prevSlide}
         >
-          prev
+          <AiOutlineArrowLeft className="slider__icon" />
         </button>
         <button
           disabled={isNextDisabled}
-          className="btn-next"
+          className="btn-next slider__btn"
           onClick={nextSlide}
         >
-          next
+          <AiOutlineArrowRight className="slider__icon" />
         </button>
       </div>
     </div>

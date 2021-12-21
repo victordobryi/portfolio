@@ -5,6 +5,7 @@ export const PortfolioData = [
     subtitle:
       'The slider in the "Welcome" section, the slider for comparing pictures in the "PICTURE EXPLORE" section, the "slide in on scroll" gallery in the "ART GALLERY" section are written without using third-party libraries',
     image: require('../../assets/images/portfolio/louvre.png'),
+    video: require('../../assets/videos/portfolio/louvre480.mp4'),
     link: 'https://victordobryi-louvre.netlify.app/'
   },
   {
@@ -13,6 +14,7 @@ export const PortfolioData = [
     subtitle:
       'Momentum - is an analogue of the app of the same name in the Chrome web store. The app shows the time and username. The background image and greeting change depending on the time of day. The app has a clock, image slider, weather widgets, audio player, block quote of the day. To store the username and settlement, local storage is used.',
     image: require('../../assets/images/portfolio/momentum.png'),
+    video: require('../../assets/videos/portfolio/momentum480.mp4'),
     link: 'https://victordobryi-momentum.netlify.app/'
   },
   {
@@ -22,6 +24,7 @@ export const PortfolioData = [
     subtitle:
       'The interface is taken from the application of the same name on the Iphone. It is possible to turn the phone over',
     image: require('../../assets/images/portfolio/calc.png'),
+    video: require('../../assets/videos/portfolio/calc480.mp4'),
     link: 'https://victordobryi-calculator.netlify.app/'
   },
   {
@@ -30,6 +33,7 @@ export const PortfolioData = [
     subtitle:
       'TODO list is needed in order to control and not forget the things that need to be done',
     image: require('../../assets/images/portfolio/todo.png'),
+    video: require('../../assets/videos/portfolio/todo480.mp4'),
     link: 'https://todo-victordobryi.netlify.app/'
   }
 ];

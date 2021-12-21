@@ -16,10 +16,12 @@ export const About = () => {
       <div className="_container">
         <div className="about-me">
           <div className="about__info">
-            <h2 className="about__title">I am Victor Kasilkin.</h2>
+            <h2 className="about__title">
+              I am Victor Kasilkin<mark>.</mark>
+            </h2>
             <p className="about__subtitle">
-              I am 24 years old. I am a creative, forward-looking, hardworking,
-              team player. Or, in a nutshell, a beginner frontend developer.
+              24 years old. I am a creative, forward-looking, hardworking, team
+              player. Or, in a nutshell, a beginner frontend developer.
             </p>
             <div className="about__contacts">
               <p className="about__contacts-item">
@@ -44,13 +46,13 @@ export const About = () => {
                 <span>Social</span>
                 <div>
                   <a
-                    href="linkedin.com/in/victor-kasilkin/"
+                    href="https://www.linkedin.com/in/victor-kasilkin/"
                     className="about__contacts-links"
                   >
                     <AiFillLinkedin />
                   </a>
                   <a
-                    href="github.com/victordobryi"
+                    href="https://www.github.com/victordobryi"
                     className="about__contacts-links"
                   >
                     <AiFillGithub />
@@ -65,7 +67,10 @@ export const About = () => {
               </div>
             </div>
             <div className="about__buttons">
-              <button className="about__buttons-item dark" onClick={openModal}>
+              <button
+                className="about__buttons-item colored"
+                onClick={openModal}
+              >
                 Contact Me
               </button>
               <button className="about__buttons-item">Download CV</button>

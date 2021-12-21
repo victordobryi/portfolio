@@ -1,0 +1,16 @@
+.form {
+  padding: 40px 0;
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__inputs {
+    width: 45%;
+  }
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+  }
+}

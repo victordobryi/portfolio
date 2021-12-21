@@ -1,7 +1,10 @@
+@import '../../styles/variables.scss';
+
 .slider {
   &__nav {
     display: flex;
     justify-content: space-around;
+    padding-top: 25px;
   }
   &__buttons {
     text-align: center;
@@ -17,7 +20,25 @@
       width: 30px;
       height: 30px;
       border-radius: 50%;
-      border: 1px solid black;
+      border: 1px solid $yellow;
     }
+  }
+  &__btn {
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    &:disabled .slider__icon {
+      opacity: 0.7;
+    }
+  }
+  &__icon {
+    color: $yellow;
+    font-size: 30px;
+  }
+  &__counter {
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 75px;
   }
 }

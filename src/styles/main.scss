@@ -1,6 +1,7 @@
 @import 'mixins';
 @import 'fonts';
 @import 'reset';
+@import 'variables';
 
 html,
 body {
@@ -8,7 +9,13 @@ body {
   font-size: 22px;
   height: 100%;
   font-family: 'notosans';
-  background: aquamarine;
+  color: $grey;
+  background: $darkgrey;
+}
+
+body.light-mode {
+  color: $darkgrey;
+  background-color: #fff;
 }
 
 ._container {
@@ -22,7 +29,7 @@ main {
 }
 
 section {
-  padding-top: 100px;
+  padding: 50px 0px;
 }
 
 .section-container {

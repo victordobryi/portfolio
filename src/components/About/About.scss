@@ -1,24 +1,37 @@
+@import '../../styles/variables.scss';
+
 .about {
+  background-color: $lightgrey;
   &-me {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 400px;
   }
   &__info {
     display: flex;
     flex-direction: column;
-    width: 48%;
+    width: 40%;
+    height: 300px;
+    justify-content: space-between;
+    & mark {
+      background: transparent;
+      color: $yellow;
+    }
   }
   &__title {
     font-weight: 900;
     font-size: 35px;
   }
   &__subtitle {
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 1.4;
   }
   &__contacts {
     width: 300px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     &-item {
       display: flex;
       justify-content: space-between;
@@ -35,20 +48,24 @@
   &__buttons {
     display: flex;
     justify-content: space-between;
-    width: 250px;
+    width: 300px;
     &-item {
       text-align: center;
-      padding: 15px;
+      padding: 11px 15px;
       display: inline-block;
-      border: none;
-      border-radius: 2px;
+      border: 4px solid transparent;
+      border-radius: 4px;
       transition: all 0.3s ease;
       font-size: 14px;
       min-width: 120px;
-      background: #efefef;
-      &.dark {
-        background-color: rgb(71, 71, 238);
-        color: #fff;
+      background: $grey;
+      cursor: pointer;
+      &:hover {
+        border-radius: 10px;
+        border: 4px solid black;
+      }
+      &.colored {
+        background-color: $yellow;
       }
     }
   }
@@ -56,8 +73,8 @@
     position: relative;
     width: 48%;
     &-circle {
-      width: 300px;
-      height: 300px;
+      width: $size;
+      height: $size;
       background-color: #fff;
       border-radius: 100%;
       margin: 75px auto 0px auto;
@@ -69,8 +86,8 @@
       left: 0;
       right: 0;
       bottom: 0;
-      width: 300px;
-      height: 300px;
+      width: $size;
+      height: $size;
     }
   }
 }

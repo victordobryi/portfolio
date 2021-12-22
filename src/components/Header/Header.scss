@@ -20,3 +20,14 @@
     background-color: transparent;
   }
 }
+
+body.light-mode {
+  & .header {
+    background-color: $lightpurple;
+  }
+  & .logo {
+    & mark {
+      color: $flowerblue;
+    }
+  }
+}

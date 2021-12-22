@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from 'react-icons/ai';
 import './About.scss';
-import Avatar from '../../assets/images/tViN90-8B60-removebg-preview.png';
+import Avatar from '../../assets/images/ilon.png';
 import { ModalContent } from '../Modal/ModalContent';
 
 export const About = () => {
@@ -47,18 +47,24 @@ export const About = () => {
                 <div>
                   <a
                     href="https://www.linkedin.com/in/victor-kasilkin/"
+                    target={'_blank'}
+                    rel="noreferrer"
                     className="about__contacts-links"
                   >
                     <AiFillLinkedin />
                   </a>
                   <a
                     href="https://www.github.com/victordobryi"
+                    target={'_blank'}
+                    rel="noreferrer"
                     className="about__contacts-links"
                   >
                     <AiFillGithub />
                   </a>
                   <a
                     href="https://www.instagram.com/victor.kosyak/"
+                    target={'_blank'}
+                    rel="noreferrer"
                     className="about__contacts-links"
                   >
                     <AiFillInstagram />
@@ -73,12 +79,19 @@ export const About = () => {
               >
                 Contact Me
               </button>
-              <button className="about__buttons-item">Download CV</button>
+              <a
+                href="../../../src/assets/Front End Developer Resume (10).pdf"
+                className="about__buttons-item"
+                download
+              >
+                Download CV
+              </a>
             </div>
           </div>
           <div className="about__img">
             <div className="about__img-circle"></div>
             <img className="about__img-avatar" src={Avatar} alt="" />
+            <h2>it&apos;s not me. No matching photos yet.</h2>
           </div>
         </div>
       </div>

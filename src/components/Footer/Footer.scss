@@ -34,3 +34,14 @@
     }
   }
 }
+
+body.light-mode {
+  & .footer {
+    background-color: $lightpurple;
+    &-logo {
+      & mark {
+        color: $flowerblue;
+      }
+    }
+  }
+}

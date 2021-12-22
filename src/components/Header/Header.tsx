@@ -8,6 +8,7 @@ export const Header = () => {
 
   const handleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
+    document.body.classList.toggle('light-mode');
   };
   return (
     <header className="header">

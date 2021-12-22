@@ -42,3 +42,20 @@
     width: 75px;
   }
 }
+
+body.light-mode {
+  & .slider {
+    &__pagination {
+      &-item {
+        border: 1px solid $lightpurple;
+      }
+    }
+    &__icon {
+      color: $pink;
+      background-color: transparent;
+    }
+    &__btn {
+      background-color: transparent;
+    }
+  }
+}

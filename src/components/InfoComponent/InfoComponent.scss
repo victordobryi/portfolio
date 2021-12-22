@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .info {
   width: 35%;
 
@@ -11,7 +13,13 @@
     line-height: 1.4;
   }
   & mark {
-    color: #fef200;
+    color: $yellow;
     background-color: transparent;
+  }
+}
+
+body.light-mode {
+  & .info mark {
+    color: $lightpurple;
   }
 }

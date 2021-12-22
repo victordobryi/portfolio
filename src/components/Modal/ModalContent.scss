@@ -28,3 +28,12 @@
   color: $grey;
   background-color: $lightgrey;
 }
+
+body.light-mode {
+  & .modal {
+    &__textarea {
+      border: 4px solid $darkpurple;
+      background-color: $lightpurple;
+    }
+  }
+}

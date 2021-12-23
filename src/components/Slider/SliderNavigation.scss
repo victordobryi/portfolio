@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-around;
     padding-top: 25px;
+    align-items: center;
   }
   &__buttons {
     text-align: center;
@@ -21,6 +22,7 @@
       height: 30px;
       border-radius: 50%;
       border: 1px solid $yellow;
+      cursor: pointer;
     }
   }
   &__btn {
@@ -56,6 +58,70 @@ body.light-mode {
     }
     &__btn {
       background-color: transparent;
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .slider {
+    &__pagination {
+      width: 100px;
+      &-item {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    &__counter,
+    &__icon {
+      font-size: 25px;
+    }
+    &__buttons {
+      width: 100px;
+    }
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .slider {
+    &__nav {
+      padding-top: 10px;
+    }
+    &__pagination {
+      width: 100px;
+      &-item {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    &__counter,
+    &__icon {
+      font-size: 25px;
+    }
+    &__buttons {
+      width: 100px;
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .slider {
+    &__nav {
+      padding-top: 10px;
+    }
+    &__pagination {
+      width: 80px;
+      &-item {
+        width: 15px;
+        height: 15px;
+      }
+    }
+    &__counter,
+    &__icon {
+      font-size: 20px;
+    }
+    &__buttons {
+      width: 80px;
+    }
+    &__counter {
+      width: 50px;
     }
   }
 }

@@ -1,19 +1,19 @@
 export const SidebarData = [
-  { title: 'About', path: '#', cName: 'menu__links-item' },
+  { title: 'About', path: '#about', cName: 'menu__links-item' },
   {
     title: 'Education',
-    path: '#',
+    path: '#education',
     cName: 'menu__links-item'
   },
-  { title: 'Skills', path: '#', cName: 'menu__links-item' },
+  { title: 'Skills', path: '#skills', cName: 'menu__links-item' },
   {
     title: 'Portfolio',
-    path: '#',
+    path: '#portfolio',
     cName: 'menu__links-item'
   },
   {
-    title: 'Contact',
-    path: '#',
+    title: 'Contacts',
+    path: '#contacts',
     cName: 'menu__links-item'
   }
 ];

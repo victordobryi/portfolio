@@ -3,3 +3,18 @@
     width: 60%;
   }
 }
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .contacts {
+    &-form {
+      width: 100%;
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .contacts {
+    &-form {
+      width: 100%;
+    }
+  }
+}

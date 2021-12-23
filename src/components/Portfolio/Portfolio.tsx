@@ -11,8 +11,8 @@ export const Portfolio = () => (
           title="Portfolio"
           subtitle="Not all of my projects are present in this slider. I will try to add the rest of the work as soon as possible."
         />
-        <PortfolioSlider />
       </div>
     </div>
+    <PortfolioSlider />
   </section>
 );

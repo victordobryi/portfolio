@@ -7,7 +7,20 @@
     display: flex;
     transition: 0.2s;
   }
-  &__item {
-    height: 600px;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .slider {
+    width: 70%;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .slider {
+    width: 100%;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .slider {
+    width: 100%;
   }
 }

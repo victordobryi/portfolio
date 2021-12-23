@@ -22,10 +22,21 @@ export const Slider = ({
   const [position, setPosition] = useState(0);
   const [sliderContainerWidth, setSliderContainerWidth] = useState(0);
   const [currentSlide, setCurrentSlide] = useState(1);
+  const [specialHeightIndent, setSpecialHeightIndent] = useState(0);
 
   useLayoutEffect(() => {
     if (targetRef.current) {
       setSliderContainerWidth(targetRef.current.clientWidth);
+
+      if (window.screen.width < 769 && window.screen.width > 480) {
+        setSpecialHeightIndent(150);
+      } else if (window.screen.width >= 769 && window.screen.width < 1024) {
+        setSpecialHeightIndent(175);
+      } else if (window.screen.width <= 480) {
+        setSpecialHeightIndent(90);
+      } else {
+        setSpecialHeightIndent(200);
+      }
     }
   }, []);
 
@@ -81,7 +92,8 @@ export const Slider = ({
                   minWidth: itemWidth,
                   marginRight: marginRight,
                   backgroundSize: 'contain',
-                  backgroundRepeat: 'no-repeat'
+                  backgroundRepeat: 'no-repeat',
+                  height: itemWidth - specialHeightIndent
                 }}
               ></div>
             );

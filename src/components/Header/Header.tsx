@@ -18,7 +18,11 @@ export const Header = () => {
             <mark>V</mark>.K<mark>.</mark>
           </h1>
           <Navbar />
-          <div onClick={handleDarkMode} role={'presentation'}>
+          <div
+            onClick={handleDarkMode}
+            role={'presentation'}
+            style={{ cursor: 'pointer' }}
+          >
             {isDarkMode ? (
               <BsFillMoonStarsFill />
             ) : (

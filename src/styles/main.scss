@@ -35,3 +35,15 @@ section {
   display: flex;
   justify-content: space-between;
 }
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  section {
+    padding: 25px 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .section-container {
+    flex-direction: column;
+  }
+}

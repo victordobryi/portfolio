@@ -31,3 +31,16 @@ body.light-mode {
     }
   }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+@media (min-width: 480px) and (max-width: 768px) {
+}
+@media (min-width: 320px) and (max-width: 480px) {
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  .logo {
+    width: 90%;
+  }
+}

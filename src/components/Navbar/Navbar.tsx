@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { MouseEvent, useState } from 'react';
 import './Navbar.scss';
 import { SidebarData } from './SidebarData';
 
@@ -15,6 +15,16 @@ export const Navbar = () => {
     }
   };
 
+  const moveToAnchor = (e: MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const blockID = e.currentTarget.getAttribute('href')?.substring(1);
+
+    document.querySelector(`.${blockID}`)?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  };
+
   return (
     <div className={sidebar ? 'menu menu_state_open' : 'menu'}>
       <div
@@ -29,7 +39,7 @@ export const Navbar = () => {
         <span></span>
       </div>
       <nav>
-        <ul
+        <div
           className="menu__links"
           onClick={closeSideBar}
           onKeyPress={() => ''}
@@ -37,12 +47,17 @@ export const Navbar = () => {
         >
           {SidebarData.map((item, i) => {
             return (
-              <li key={i} className={item.cName}>
+              <a
+                onClick={(e) => moveToAnchor(e)}
+                href={item.path}
+                key={i}
+                className={item.cName}
+              >
                 <span>{item.title}</span>
-              </li>
+              </a>
             );
           })}
-        </ul>
+        </div>
       </nav>
     </div>
   );

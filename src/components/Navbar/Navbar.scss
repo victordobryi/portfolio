@@ -89,16 +89,28 @@
     display: none;
     top: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: $yellow;
     z-index: 1000;
     overflow: auto;
-    width: 300px;
+    width: 55%;
     height: 100vh;
     &-item {
       display: block;
       padding: 30px 0;
       text-align: center;
-      color: #ffffff;
+      color: $darkgrey;
+    }
+  }
+}
+
+body.light-mode {
+  .menu__links {
+    background-color: $darkpurple;
+    &-item {
+      color: $lightpurple;
+      &:hover {
+        border-bottom: 4px solid $darkpurple;
+      }
     }
   }
 }

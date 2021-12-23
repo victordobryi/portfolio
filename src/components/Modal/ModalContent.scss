@@ -37,3 +37,11 @@ body.light-mode {
     }
   }
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .modal {
+    &__textarea {
+      width: 90%;
+    }
+  }
+}

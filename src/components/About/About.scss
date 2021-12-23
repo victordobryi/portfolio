@@ -73,7 +73,7 @@
   }
   &__img {
     position: relative;
-    width: 48%;
+    width: 50%;
     &-circle {
       width: $size;
       height: $size;
@@ -104,6 +104,91 @@ body.light-mode {
           color: $lightpurple;
         }
       }
+    }
+    &__info {
+      & mark {
+        color: $darkpurple;
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .about {
+    &__title {
+      font-size: 30px;
+    }
+    &__subtitle {
+      font-size: 16px;
+    }
+    &__img {
+      & img {
+        height: 300px;
+        width: 300px;
+      }
+      &-circle {
+        height: 300px;
+        width: 300px;
+        margin: 50px auto 0px auto;
+      }
+    }
+    &__contacts {
+      font-size: 18px;
+    }
+    &__info {
+      height: 320px;
+    }
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .about {
+    &-me {
+      flex-direction: column;
+      text-align: center;
+    }
+    &__info {
+      align-items: center;
+      width: 72%;
+    }
+    &__img {
+      width: 90%;
+      & img {
+        height: 250px;
+        width: 250px;
+      }
+      &-circle {
+        height: 250px;
+        width: 250px;
+      }
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .about {
+    &-me {
+      flex-direction: column;
+      text-align: center;
+    }
+    &__info {
+      align-items: center;
+      width: 90%;
+      height: 375px;
+    }
+    &__img {
+      width: 90%;
+      & img {
+        height: 250px;
+        width: 250px;
+      }
+      &-circle {
+        height: 250px;
+        width: 250px;
+        margin: 50px auto 0px auto;
+      }
+    }
+    &__contacts {
+      font-size: 18px;
+      width: 95%;
     }
   }
 }

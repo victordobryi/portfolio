@@ -105,9 +105,9 @@
 
 body.light-mode {
   .menu__links {
-    background-color: $darkpurple;
+    background-color: $lightpurple;
     &-item {
-      color: $lightpurple;
+      color: $darkpurple;
       &:hover {
         border-bottom: 4px solid $darkpurple;
       }

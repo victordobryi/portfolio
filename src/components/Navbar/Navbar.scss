@@ -114,3 +114,9 @@ body.light-mode {
     }
   }
 }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .menu__links {
+    width: 100%;
+  }
+}

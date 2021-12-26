@@ -80,7 +80,7 @@ export const About = () => {
                 Contact Me
               </button>
               <a
-                href="../../../src/assets/Front End Developer Resume (10).pdf"
+                href="../../../src/assets/CV.pdf"
                 className="about__buttons-item"
                 download
               >

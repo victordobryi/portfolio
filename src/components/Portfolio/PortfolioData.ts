@@ -35,5 +35,24 @@ export const PortfolioData = [
     image: require('../../assets/images/portfolio/todo.png'),
     video: require('../../assets/videos/portfolio/todo480.mp4'),
     link: 'https://todo-victordobryi.netlify.app/'
+  },
+  {
+    background:
+      'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(95,95,139,1) 35%, rgba(0,212,255,1) 100%)',
+    title: 'Photo-filter',
+    subtitle: 'Image filtering app',
+    image: require('../../assets/images/portfolio/photo-filter.png'),
+    video: require('../../assets/videos/portfolio/photo-filter.mp4'),
+    link: 'https://victordobryi-photo-filter.netlify.app/'
+  },
+  {
+    background:
+      'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(50,255,22,1) 0%, rgba(0,212,255,1) 100%)',
+    title: 'music-app',
+    subtitle:
+      'An application where you can select a musical instrument and play it',
+    image: require('../../assets/images/portfolio/musicApp.png'),
+    video: require('../../assets/videos/portfolio/musicApp.mp4'),
+    link: 'https://victordobryi-mysicapp.netlify.app/'
   }
 ];

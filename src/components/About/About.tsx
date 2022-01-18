@@ -3,6 +3,7 @@ import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from 'react-icons/ai';
 import './About.scss';
 import Avatar from '../../assets/images/ilon.png';
 import { ModalContent } from '../Modal/ModalContent';
+import CV from '../../assets/CV.pdf';
 
 export const About = () => {
   const [active, setActive] = useState(false);
@@ -79,11 +80,7 @@ export const About = () => {
               >
                 Contact Me
               </button>
-              <a
-                href="../../../src/assets/CV.pdf"
-                className="about__buttons-item"
-                download
-              >
+              <a href={CV} className="about__buttons-item" download>
                 Download CV
               </a>
             </div>

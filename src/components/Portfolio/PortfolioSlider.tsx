@@ -6,7 +6,10 @@ export const PortfolioSlider = () => {
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
   const [isVideoEntered, setIsVideoEntered] = useState(false);
 
-  const height = 500;
+  let height = 500;
+  if (window.screen.width <= 768) {
+    height = 300;
+  }
 
   const nextSlide = () => {
     setActiveSlideIndex(

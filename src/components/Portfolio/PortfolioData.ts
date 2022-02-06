@@ -2,8 +2,7 @@ export const PortfolioData = [
   {
     background: 'linear-gradient(215.32deg, #f90306 -1%, #9e0706 124%)',
     title: 'Louvre website',
-    subtitle:
-      'The slider in the "Welcome" section, the slider for comparing pictures in the "PICTURE EXPLORE" section, the "slide in on scroll" gallery in the "ART GALLERY" section are written without using third-party libraries',
+    subtitle: '(Typescript, SASS, Webpack, splidejs)',
     image: require('../../assets/images/portfolio/louvre.png'),
     video: require('../../assets/videos/portfolio/louvre480.mp4'),
     link: 'https://victordobryi-louvre.netlify.app/'
@@ -11,8 +10,7 @@ export const PortfolioData = [
   {
     background: 'linear-gradient(221.87deg, #8308ea 1%, #5305af 128%)',
     title: 'Momentum',
-    subtitle:
-      'Momentum - is an analogue of the app of the same name in the Chrome web store. The app shows the time and username. The background image and greeting change depending on the time of day. The app has a clock, image slider, weather widgets, audio player, block quote of the day. To store the username and settlement, local storage is used.',
+    subtitle: '(Typescript, SASS, Webpack)',
     image: require('../../assets/images/portfolio/momentum.png'),
     video: require('../../assets/videos/portfolio/momentum480.mp4'),
     link: 'https://victordobryi-momentum.netlify.app/'
@@ -21,8 +19,7 @@ export const PortfolioData = [
     background:
       'linear-gradient(90deg, rgba(6, 126, 123, 1) 30%, rgba(0, 178, 245, 1) 86%)',
     title: 'Calculator',
-    subtitle:
-      'The interface is taken from the application of the same name on the Iphone. It is possible to turn the phone over',
+    subtitle: '(Typescript, SASS, Webpack)',
     image: require('../../assets/images/portfolio/calc.png'),
     video: require('../../assets/videos/portfolio/calc480.mp4'),
     link: 'https://victordobryi-calculator.netlify.app/'
@@ -30,8 +27,7 @@ export const PortfolioData = [
   {
     background: 'linear-gradient(220.16deg, #ffe101 -8%, #f39102 138%)',
     title: 'ToDo',
-    subtitle:
-      'TODO list is needed in order to control and not forget the things that need to be done',
+    subtitle: '(React, Redux, Typescript, SASS, Webpack)',
     image: require('../../assets/images/portfolio/todo.png'),
     video: require('../../assets/videos/portfolio/todo480.mp4'),
     link: 'https://todo-victordobryi.netlify.app/'
@@ -40,7 +36,7 @@ export const PortfolioData = [
     background:
       'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(95,95,139,1) 35%, rgba(0,212,255,1) 100%)',
     title: 'Photo-filter',
-    subtitle: 'Image filtering app',
+    subtitle: '(Typescript, SASS, Webpack)',
     image: require('../../assets/images/portfolio/photo-filter.png'),
     video: require('../../assets/videos/portfolio/photo-filter.mp4'),
     link: 'https://victordobryi-photo-filter.netlify.app/'
@@ -48,11 +44,19 @@ export const PortfolioData = [
   {
     background:
       'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(50,255,22,1) 0%, rgba(0,212,255,1) 100%)',
-    title: 'music-app',
-    subtitle:
-      'An application where you can select a musical instrument and play it',
+    title: 'Music-app',
+    subtitle: '(Typescript, SPA, SASS, Webpack)',
     image: require('../../assets/images/portfolio/musicApp.png'),
     video: require('../../assets/videos/portfolio/musicApp.mp4'),
     link: 'https://victordobryi-mysicapp.netlify.app/'
+  },
+  {
+    background:
+      'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,22,234,1) 0%, rgba(0,212,255,1) 100%)',
+    title: 'English for kids',
+    subtitle: '(React, Redux Toolkit, Typescript, SASS, Webpack)',
+    image: require('../../assets/images/portfolio/EFK.png'),
+    video: require('../../assets/videos/portfolio/efk.mp4'),
+    link: 'https://victordobryi-english-for-kids.netlify.app/'
   }
 ];

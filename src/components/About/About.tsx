@@ -22,7 +22,7 @@ export const About = () => {
             </h2>
             <p className="about__subtitle">
               24 years old. I am a creative, forward-looking, hardworking, team
-              player. Or, in a nutshell, a beginner frontend developer.
+              player. A beginner frontend developer.
             </p>
             <div className="about__contacts">
               <p className="about__contacts-item">

@@ -9,7 +9,7 @@ export const Contacts = () => (
       <div className="section-container">
         <InfoComponent
           title="Contacts"
-          subtitle="Are you working on something great? I would love to help make it happen! Drop me a letter and start your project right now! Just do it"
+          subtitle="Are you working on something great? I would like to help make it happen! Drop me a letter and start your project right now! Just do it"
         />
         <div className="contacts-form">
           <Form />
